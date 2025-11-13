@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="no">
+     <head>
+        <meta charset="UTF-8">
+        <title>Differansen i antall tegn</title>
+     </head>
+
+     <body>
+        <script>
+            let tegn1 = prompt("Skriv inn steds navn 1:");
+            let tegn2 = prompt("Skriv inn steds navn 2:");
+            
+            if (!tegn1 || !tegn2) {
+                alert("Du må skrive inn begge stedsnavnene!");
+            } else {
+              let differansen = Math.abs(tegn1.length - tegn2.length);
+              alert("Differanse mellom antall tegn " + tegn1 + " og " + tegn2 + " er " + differansen + ".")
+            }
+        </script>    
+     </body>
+
+</html>
